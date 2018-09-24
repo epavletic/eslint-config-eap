@@ -1,0 +1,35 @@
+{
+  "name": "@eap/eslint-config-eap",
+  "version": "1.0.0",
+  "description": "Shareable eslint config for convenience.",
+  "author": "Erik Pavletic",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "react.js"
+  ],
+  "dependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.11.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=5"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
