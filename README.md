@@ -10,20 +10,20 @@ $ npm i -D @eap/eslint-config-eap
 Add the configuration to your `package.json`:
 
 _For plain js modules:_
-``` JSON
+``` json
 {
-   "eslintConfig": {
-        "extends": "@eap"
-    }
+  "eslintConfig": {
+    "extends": "@eap"
+  }
 }
 ```
 
 _For [React](https://reactjs.org) modules:_
-``` JSON
+``` json
 {
-   "eslintConfig": {
-        "extends": "@eap/react"
-    }
+  "eslintConfig": {
+    "extends": "@eap/react"
+  }
 }
 ```
 
