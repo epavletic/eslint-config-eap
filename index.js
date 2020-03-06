@@ -1,5 +1,3 @@
-const testFilePattern = '[a-zA-Z]*.test$';
-
 module.exports = {
   env: {
     browser: true,
@@ -8,7 +6,7 @@ module.exports = {
   },
   extends: ['airbnb', 'prettier'],
   parser: 'babel-eslint',
-  plugins: ['filenames', 'prettier'],
+  plugins: ['prettier'],
   rules: {
     'prettier/prettier': 'error',
     curly: ['error', 'all'],
@@ -36,19 +34,6 @@ module.exports = {
             selector: 'WithStatement',
             message:
               '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
-          },
-          {
-            files: ['**/src/**/*.js'],
-            excludedFiles: ['*.test.*', 'index.js'],
-            rules: {
-              'filenames/match-regex': 'error',
-            },
-          },
-          {
-            files: ['**/__tests__/**'],
-            rules: {
-              'filenames/match-regex': ['error', testFilePattern],
-            },
           },
         ],
       },
